@@ -27,13 +27,30 @@
 
         ?>
 
-        <form>
-            
+        <form method="post">
+            <label for="nameInput">Username</label><br>
+            <input type="text" name="usernameInput"><br>
 
+            <label for="ageInput">Age</label><br>
+            <input type="number" name="ageInput"><br>
 
+            <label for="radioButtons">Alternatives</label><br>
+            <input type="radio" name="radioButtons" value="1" id="alternative">
+            <label for="alternative">Alternative</label><br>
+            <input type="radio" name="radioButtons" value="2" id="otherAlternative">
+            <label for="otherAlternative">Other Alternative</label><br>
 
+            <input type="submit" name="submitButton"><br>
         </form>
 
+        <?php  
+        if($_POST){
+            echo "Username: ". $_POST['usernameInput'] . "<br>";
+            echo "Age: " . $_POST['ageInput'] . "<br>";
+            echo "Alternative: " . isset($_POST['radioButtons']) . "<br>";
+        }
+        
+        ?>
 
     </body>
 </html>
