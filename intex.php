@@ -25,6 +25,10 @@
         echo $num1 + $num2 . "<br>";
         echo $num1 . $num2 . "<br>";
 
+        $anArray = Array("This ","is ","an ","array!");
+        for ($x = 0; $x <= sizeof($anArray)-1; $x++){
+            echo $anArray[$x];
+        }
         ?>
 
         <form method="post">
@@ -48,8 +52,7 @@
             echo "Username: ". $_POST['usernameInput'] . "<br>";
             echo "Age: " . $_POST['ageInput'] . "<br>";
             echo "Alternative: " . isset($_POST['radioButtons']) . "<br>";
-        }
-        
+        } 
         ?>
 
     </body>

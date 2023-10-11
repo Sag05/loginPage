@@ -1,0 +1,22 @@
+*{
+    color: #2f0450;
+}
+
+body{
+    background-color: #cfb9ff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+#formContainer{
+    border-radius: 25px;
+    width: 80vw;
+    background-color: #f38af9;
+    margin-top: 50px;
+    padding: 40px;
+}
+
+h3{
+    font-size: 30px;
+}
