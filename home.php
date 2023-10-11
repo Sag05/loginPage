@@ -7,7 +7,6 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
 ?>
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <title>Home</title>
@@ -21,12 +20,9 @@ if (!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true) {
             echo htmlspecialchars($_SESSION["username"]) . "!";
             ?>
         </h3>
-
-
         <form method="POST" action="logoutScript.php">
             <button type="submit">Log out</button>
         </form>
-
         <p>This is where we would have text but we don't have text so there is no text here.</p>
     </div>
 </body>

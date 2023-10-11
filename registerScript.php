@@ -4,9 +4,6 @@
 		header("location: home.php");
 	}
 
-
-
-
 	//Check if username was entered
 	if (empty(trim($_POST["username"]))) {
 		$error .= "reu";

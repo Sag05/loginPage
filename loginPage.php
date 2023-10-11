@@ -15,7 +15,6 @@
     </head>
     <body>
         <div id="formContainer">
-        
             <h3>Register</h3>
                 <?php 
                     if(isset($_GET["error"])){
@@ -53,7 +52,7 @@
                 ?>
             <form method="post" action="registerScript.php">
                 <input class="spacing1" type="text" name="username" placeholder="Username"><br>
-                <input class="spacing1" type="mail" name="email" placeholder="Email"><br>
+                <input class="spacing1" type="email" name="email" placeholder="Email"><br>
                 <input class="spacing1" type="password" name="password" placeholder="Password"><br>
                 <input class="spacing2" type="submit" name="newButton" value="Register">
             </form>
