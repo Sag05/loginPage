@@ -18,10 +18,10 @@
 		$password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 	}
 
-	if(empty(trim($_POST["mail"]))){
+	if(empty(trim($_POST["email"]))){
 		$error .= "ree";
 	} else {
-		$mail = $_POST['mail'];
+		$mail = $_POST['email'];
 	}
 
 	if(isset($error)){
